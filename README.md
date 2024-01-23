@@ -23,6 +23,7 @@ To link the SIM7000G to Traccar I use the OSMAND protocol, which is basically us
 - Open the Arduino serial terminal to observe how it works.
 
 ## Configure Traccar
+- Create an Account, in my case use demo4.traccar.org
 - 
 
 
