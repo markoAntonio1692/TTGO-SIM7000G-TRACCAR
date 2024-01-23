@@ -22,4 +22,7 @@ To link the SIM7000G to Traccar I use the OSMAND protocol, which is basically us
 - Load the source code, it is an Arduino sketch called "SIM7000G_NTWRK_GPS_HTTP" to the devkit.
 - Open the Arduino serial terminal to observe how it works.
 
+## Configure Traccar
+- 
+
 
