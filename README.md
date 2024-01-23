@@ -12,4 +12,7 @@ The functionalities consist of the following:
 
 *Note: The functionalities can extend to different conveniences such as reading RS485 sensors, reading analog channels, temperature sensors, humidity, etc.
 
+The platform in charge of reception is TRACCAR, an open source platform for vehicle tracking and tracking. This platform is very well known and there is much more information on its official website https://www.traccar.org/.
+To link the SIM7000G to Traccar I use the OSMAND protocol, which is basically using an HTTP GET REQUEST with parameters as described by the osmand protocol, more information here: https://www.traccar.org/osmand/
+
 
