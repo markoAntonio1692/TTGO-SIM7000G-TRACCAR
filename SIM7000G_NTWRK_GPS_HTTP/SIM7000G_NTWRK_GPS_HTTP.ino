@@ -14,7 +14,7 @@ Version: 0.1
 String server   = "demo4.traccar.org";
 String resource = "";
 int  port       = 5055;
-String DeviceID = "CAFECAFE"; /*Create ID for Asociate to Traccar Platform (Unique ID for each devices)*/ 
+String DeviceID = "CAFECAFE3"; /*Create ID for Asociate to Traccar Platform (Unique ID for each devices)*/ 
 /*simcard Details*/
 static const char apn[15]  = "convergia1.com";
 static const char gprsUser[] = "";
@@ -82,7 +82,7 @@ void setup(){
     //EEPROM.begin(12);
      
     // Set LED OFF
-    pinMode(IN1_PIN, INPUT);
+    pinMode(IN1_PIN, INPUT_PULLUP);
     pinMode(OUT1_PIN, OUTPUT);
     pinMode(LED_PIN, OUTPUT);
     digitalWrite(LED_PIN, HIGH);
@@ -271,12 +271,12 @@ void loop(){
          flagConf = 0; //reiniciar flag de confirmacion de comando
          lastMsg = now;
          if(modem.getGPS(&lat, &lon)) {
-           digitalWrite(LED_PIN, LOW);  
+           //digitalWrite(LED_PIN, LOW);  
            Serial.print("Geoloc: ");
            Serial.print(""); Serial.print(lat,7);
            Serial.print(","); Serial.println(lon,7);
            delay(1000);
-           digitalWrite(LED_PIN, HIGH);  
+           //digitalWrite(LED_PIN, HIGH);  
          }
          HTTP_REQUEST();  ///request to traccar      
       }    
@@ -360,8 +360,8 @@ SerialMon.println("RESPONSE HEADERS:");
   int bodylength = body.length();
   SerialMon.println(bodylength);
   if(bodylength > 1){
-    if(body=="out1=1") {SerialMon.println("out1=1"); digitalWrite(OUT1_PIN,HIGH); out1 = 1; flagConf=1;}
-    if(body=="out1=0") {SerialMon.println("out1=0"); digitalWrite(OUT1_PIN,LOW);  out1 = 0; flagConf=1;}
+    if(body=="out1=1") {SerialMon.println("out1=1"); digitalWrite(OUT1_PIN,HIGH); digitalWrite(LED_PIN, LOW); out1 = 1; flagConf=1;}
+    if(body=="out1=0") {SerialMon.println("out1=0"); digitalWrite(OUT1_PIN,LOW); digitalWrite(LED_PIN, HIGH); out1 = 0; flagConf=1;}
   }
 
   http.stop();
