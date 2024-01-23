@@ -1,6 +1,6 @@
 /*
 By: Ing. Marco A. Caballero Moreno
-contact: marko.antobnio.1.16.92@gmail.com
+contact: marko.antonio.1.16.92@gmail.com
 23/01/2023
 Version: 0.1
 
@@ -82,6 +82,8 @@ void setup(){
     //EEPROM.begin(12);
      
     // Set LED OFF
+    pinMode(IN1_PIN, INPUT);
+    pinMode(OUT1_PIN, OUTPUT);
     pinMode(LED_PIN, OUTPUT);
     digitalWrite(LED_PIN, HIGH);
 
@@ -269,18 +271,17 @@ void loop(){
          flagConf = 0; //reiniciar flag de confirmacion de comando
          lastMsg = now;
          if(modem.getGPS(&lat, &lon)) {
-           digitalWrite(LED_PIN, HIGH);  
+           digitalWrite(LED_PIN, LOW);  
            Serial.print("Geoloc: ");
            Serial.print(""); Serial.print(lat,7);
            Serial.print(","); Serial.println(lon,7);
            delay(1000);
-           digitalWrite(LED_PIN, LOW);  
+           digitalWrite(LED_PIN, HIGH);  
          }
          HTTP_REQUEST();  ///request to traccar      
       }    
     }
 }
-
 
 
 void enableGPS(void){
