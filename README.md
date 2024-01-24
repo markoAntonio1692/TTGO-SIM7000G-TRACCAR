@@ -19,6 +19,7 @@ To link the SIM7000G to Traccar I use the OSMAND protocol, which is basically us
 - Inserts a SIMCARD with credit, verify that there is coverage from your operator. In my case I use this IoT M2M SIMCARD in Peru https://teca.pe/shop/plan-simcard-iot-m2m-20mb-mes-x-1ano-27#attr=
 - Enter the correct traccar server data, in my case I use one of the free traccar test servers.
 - At the beginning of the code it is advisable to enter the correct data of the SIMcard APN, username and password if applicable.
+![3](images/3.png)
 - Load the source code, it is an Arduino sketch called "SIM7000G_NTWRK_GPS_HTTP" to the devkit.
 - Open the Arduino serial terminal to observe how it works.
  ![1](images/1.png)
@@ -26,7 +27,10 @@ To link the SIM7000G to Traccar I use the OSMAND protocol, which is basically us
 ![2](images/2.png)
 ## Configure Traccar
 - Create an Account, in my case use demo4.traccar.org
-- 
-  ![2](/images/4.png)
+- Go to plus Simbol "+" is located at the top
+- Add a new Device with alias and the device ID 
+  ![4](/images/4.png)
+  
+  ![5](/images/5.png)
 
 
