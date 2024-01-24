@@ -25,7 +25,7 @@ To link the SIM7000G to Traccar I use the OSMAND protocol, which is basically us
  ![1](images/1.png)
 - example for request successful
 ![2](images/2.png)
-## Configure Traccar
+## 3. Configure Traccar
 - Create an Account, in my case use demo4.traccar.org
 - Go to plus Simbol "+" is located at the top
 - Add a new Device with alias and the device ID 
