@@ -35,4 +35,9 @@ To link the SIM7000G to Traccar I use the OSMAND protocol, which is basically us
 - In preferences, maps, add the option to receive input 1 and output 1, this option looks in the pop up.
   ![6](/images/6.png)
   ![7](/images/7.png)
-
+- Example of successful connection to traccar:
+ ![9](/images/9.png)
+- Send remote command of traccar to Sim7000g, click in the simbol:
+ ![10](/images/10.png)
+- in the row data, write the command. "out1=1" or "out1=0" . The led blinks as the command indicates
+  ![11](/images/11.png)
