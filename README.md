@@ -30,7 +30,9 @@ To link the SIM7000G to Traccar I use the OSMAND protocol, which is basically us
 - Go to plus Simbol "+" is located at the top
 - Add a new Device with alias and the device ID 
   ![4](/images/4.png)
-  
+- Go to pop up and click in the edit simbol 
   ![5](/images/5.png)
-
+- In preferences, maps, add the option to receive input 1 and output 1, this option looks in the pop up.
+  ![6](/images/6.png)
+  ![7](/images/7.png)
 
