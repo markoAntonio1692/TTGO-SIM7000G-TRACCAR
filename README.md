@@ -21,10 +21,12 @@ To link the SIM7000G to Traccar I use the OSMAND protocol, which is basically us
 - At the beginning of the code it is advisable to enter the correct data of the SIMcard APN, username and password if applicable.
 - Load the source code, it is an Arduino sketch called "SIM7000G_NTWRK_GPS_HTTP" to the devkit.
 - Open the Arduino serial terminal to observe how it works.
-
+ ![1](images/1.png)
+- example for request successful
+![2](images/2.png)
 ## Configure Traccar
 - Create an Account, in my case use demo4.traccar.org
 - 
-  ![examples](/images/4.png)
+  ![2](/images/4.png)
 
 
