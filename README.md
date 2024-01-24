@@ -41,3 +41,5 @@ To link the SIM7000G to Traccar I use the OSMAND protocol, which is basically us
  ![10](/images/10.png)
 - in the row data, write the command. "out1=1" or "out1=0" . The led blinks as the command indicates
   ![11](/images/11.png)
+- In the next request, the command is sending. this content looks there in  the therminal, and the led turn ON.
+- ![12](/images/12.png)
