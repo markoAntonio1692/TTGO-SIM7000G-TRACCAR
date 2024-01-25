@@ -7,7 +7,7 @@ Version: 0.1
 */
 
 /*TRACCAR OSMAND PROTOCOL EXAMPLE */
-/* http://demo4.traccar.org:5055/?id=CAFECAFE&lat=49.8466&lon=2.4622&in1=0&out1=0 */
+/* http://demo4.traccar.org:5055/?id=CAFECAFE&lat=1.8466&lon=1.4622&in1=0&out1=0 */
 
 
 /* Server details**/
