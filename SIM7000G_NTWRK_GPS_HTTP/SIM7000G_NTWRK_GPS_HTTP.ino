@@ -14,7 +14,7 @@ Version: 0.1
 String server   = "demo4.traccar.org";
 String resource = "";
 int  port       = 5055;
-String DeviceID = "CAFECAFE3"; /*Create ID for Asociate to Traccar Platform (Unique ID for each devices)*/ 
+String DeviceID = "CAFECAFE"; /*Create ID for Asociate to Traccar Platform (Unique ID for each devices)*/ 
 /*simcard Details*/
 static const char apn[15]  = "convergia1.com";
 static const char gprsUser[] = "";
